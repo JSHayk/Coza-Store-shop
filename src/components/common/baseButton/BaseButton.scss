@@ -1,0 +1,18 @@
+.base-button {
+    cursor: pointer;    
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.4s;
+    &:hover {
+        background-color: #000 !important;
+        color: #fff;
+    }
+}

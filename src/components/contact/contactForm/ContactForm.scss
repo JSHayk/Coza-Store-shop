@@ -1,0 +1,22 @@
+.contact-form {
+    padding: 4rem;
+    border: solid 1px #e6e6e6;
+    width: 50%;
+    &-title {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 6%;
+        letter-spacing: .7px;
+    }
+    > .base-button {
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        height: 46px;
+        &:hover {
+            background-color: #717fe0 !important;
+            transition: all 0.4s;
+        }
+    }
+}

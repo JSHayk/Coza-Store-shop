@@ -1,0 +1,10 @@
+.base-select {
+    font-weight: 600;
+    outline: none;
+    width: 140px;
+    height: 28px;
+    font-size: 14px;
+    > option {
+        font-weight: 600;
+    }
+}

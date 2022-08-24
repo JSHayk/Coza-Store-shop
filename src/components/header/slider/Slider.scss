@@ -1,0 +1,245 @@
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    &-window{
+        position: relative;
+        transition: all 2s;
+        width: 100%;
+        animation: slider-window 1s linear;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            .left-pos {
+                left: 18%;
+            }
+            img{
+                width: 100%;
+                
+            }
+            h1{
+                font-size: 60px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                position: absolute;
+                top: 60%;
+                left: 8%;
+                transform: rotate(0deg);
+                transform-origin: left;
+                animation: slider-title  1s  linear ;
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+            .new-season{
+                font-family: "Srisakdi";
+            }
+            .women-collection{
+                position: absolute;
+                top: 50%;
+                font-size: 40px;
+                animation: women-collection 1s linear;
+                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            .new-arrivals{
+                font-size: 70px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: absolute;
+                top: 60%;
+                transform: rotate(0deg);
+                transform-origin: right;
+                animation: slider-title-arrivals  1s  linear ;
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            }
+            .men-collection{
+                position: absolute;
+                top: 50%;
+                font-size: 40px;
+                animation: men-collection 1s linear;
+                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            .shop-now-button-men{
+                position: absolute;
+                top: 80%;
+                background-color: rgb(112, 33, 181);
+                width: 130px;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+                color: white;
+                font-weight: 700;
+                font-size: 17px;
+                animation: shop-now-button-men 3s linear;
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+                cursor: pointer;
+            }
+            .jackets{
+                font-family: "Lobster";
+                font-size: 80px;
+            }
+            .men-new-season{
+                position: absolute;
+                top: 50%;
+                font-size: 50px;
+                animation: men-new-season 1s linear;
+                animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); //es
+                font-family: "Macondo";
+            }
+            .base-button {
+                position: absolute;
+                top: 80%;
+                left: 18% !important;
+                background-color: #717fe0;
+                width: 161px;
+                height: 46px;
+                border-radius: 30px;
+                border: none;
+                color: white;
+                font-weight: 700;
+                font-size: 17px;
+                animation:shop-now-button 2s linear;
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+                cursor: pointer;
+            }
+            .shop-now-button-women{
+                position: absolute;
+                top: 75%;
+                background-color: rgb(112, 33, 181);
+                width: 130px;
+                height: 40px;
+                border-radius: 30px;
+                border: none;
+                color: white;
+                font-weight: 700;
+                font-size: 17px;
+                animation:shop-now-button-women 2s linear;
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+                cursor: pointer;   
+            }
+    }
+    &-left{
+        position: absolute;
+        bottom: 50%;
+        left: 2%;
+        font-size: 60px;
+        opacity: 0;
+        transition: 0.3s;
+        color: grey;
+    }
+    &-right{
+        position: absolute;
+        bottom: 50%;
+        left: 95%;
+        font-size: 60px;
+        opacity: 0;
+        transition: 0.3s;
+        color: grey;
+    }
+    &-left:hover{
+        color: rgb(67, 4, 123);
+    }
+    &-right:hover{
+        color: rgb(67, 4, 123);
+    }
+    
+}
+.slider:hover .slider-left{
+    opacity: 1;
+}
+.slider:hover .slider-right{
+    opacity: 1;
+}
+@keyframes slider-title{
+    0%{
+        transform: rotate(50deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes slider-title-arrivals{
+    0%{
+        transform: rotate(-55deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+@keyframes shop-now-button{
+    0%{
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100%{
+       
+        opacity: 1;
+    }
+}
+
+@keyframes women-collection{
+    0%{
+        transform:translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes shop-now-button-women{
+    0%{
+        transform:rotate(0deg);
+        opacity: 0;
+    }
+    100%{
+        transform:rotate(360deg);
+        opacity: 1;
+    }
+}
+@keyframes shop-now-button-men{
+    0%{
+        transform:rotate(0deg);
+        opacity: 0;
+        left: 40%;
+    }
+    100%{
+        transform:rotate(360deg);
+        opacity: 1;
+    }
+}
+
+
+@keyframes men-collection{
+    0%{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slider-window {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes men-new-season {
+    0%{
+        left: 40%;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: 30%;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+
+    }
+
+}

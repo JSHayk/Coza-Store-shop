@@ -1,0 +1,26 @@
+.product-types {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 18px 18px 10px;
+    width: 500px;
+    &-item {
+        font-weight: 600;
+        color: #888;
+        margin: 4px;
+        cursor: pointer;
+        height: 24px;
+        transition: all .4s;
+    }
+    &-item:hover {
+        border-bottom: 1px solid #888;
+        color: #000;
+        transition: ease-in;
+    }
+    .active {
+        border-bottom: 1px solid #888;
+        color: #000;
+        color: #000;
+    }
+}

@@ -1,0 +1,60 @@
+.product-items {
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &-item {
+        transition: transform 0.9s ease;
+        margin: 12px;
+        width: 290px;
+        padding: 4px;
+        &-image {
+            overflow: hidden;
+            position: relative;
+            > img {
+                width: 100%;
+                vertical-align: middle;
+                transition: transform 0.9s ease;
+            }
+            &:hover img{
+                transform: scale(1.1);
+            }
+            > button {
+                position: absolute;
+                bottom: -20%;
+                left: 28%;
+                cursor: pointer;
+                z-index: 4;
+                padding: 4px;
+            }
+            &:hover button {
+                bottom: 8%;
+                transition: all .6s;
+            }
+        }
+        &-info {
+            padding-top: 12px;
+            > p {
+                font-weight: 600;
+                margin-top: 4px;
+            }
+            > .row-line {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                > i {
+                    margin-top: 4px;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                .dislike:hover {
+                    color: #717fe0;
+                }
+                .like {
+                    color: #717fe0;
+                }
+            }
+        }
+    }
+}
